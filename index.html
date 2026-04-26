@@ -103,10 +103,16 @@ section:hover {
 }
 </style>
         </head>
-        <body class="dark">
+        <script>
+        function toggleMode() {
+        document.body.classList.toggle("dark");
+}
+</script>
+        <body>
             <header>
             <h1>TANISHA GHOSH</h1>
             <p><i> BCA STUDENT| FUTURE DATA ANALYST</i></p>
+            <button onclick="toggleMode()">🌙</button>
             </header>
             <nav>
             <a href="#about">About</a>
