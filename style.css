@@ -90,7 +90,8 @@ section:hover {
 .dark {
     background-color: #0f172a;
     color: #e2e8f0;
-    /* Sections */
+}
+/* Sections */
 .dark section {
     background-color: #1e293b;
     color: #e2e8f0;
@@ -131,7 +132,6 @@ section:hover {
 /* Links */
 .dark a {
     color: #93c5fd;
-}
 }
 @media (max-width: 768px) {
     nav a {
