@@ -5,6 +5,7 @@ html{
 body {
     font-family: Arial;
     background-color: #f4f6f8;
+    transition: 0.4s;
 }
 section {
     background-color: white;
@@ -89,6 +90,48 @@ section:hover {
 .dark {
     background-color: #0f172a;
     color: #e2e8f0;
+    /* Sections */
+.dark section {
+    background-color: #1e293b;
+    color: #e2e8f0;
+}
+
+/* Navigation links */
+.dark nav a {
+    color: white;
+}
+
+/* Headings */
+.dark h1,
+.dark h2 {
+    color: #60a5fa;
+}
+
+/* Table */
+.dark table,
+.dark th,
+.dark td {
+    border-color: #475569;
+}
+
+.dark td {
+    background-color: #1e293b;
+    color: white;
+}
+
+.dark th {
+    background-color: #2563eb;
+}
+
+/* Header */
+.dark header {
+    background-color: #1d4ed8;
+}
+
+/* Links */
+.dark a {
+    color: #93c5fd;
+}
 }
 @media (max-width: 768px) {
     nav a {
@@ -96,4 +139,4 @@ section:hover {
         margin: 10px 0;
     } 
 }
-</style>
+</style> 
