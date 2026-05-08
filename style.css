@@ -21,15 +21,97 @@ h2 {
     color: #0a66c2;
 }
 section {
-    background-color: white;
+
+    position: relative;
+
+    background: white;
+
     margin: 20px;
+
     padding: 20px;
+
     border-radius: 12px;
+
     flex: 1 1 40%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;
+
+    z-index: 1;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+
+/* Rotating glowing border */
+
+section::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -2px;
+
+    border-radius: 12px;
+
+    background: conic-gradient(
+        from 0deg,
+        transparent,
+        #00f7ff,
+        #2563eb,
+        transparent
+    );
+
+    animation: rotateBorder 3s linear infinite;
+
+    z-index: -2;
+
+    filter: blur(2px);
+
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+
+/* Inner card layer */
+
+section::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 3px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    z-index: -1;
+}
+
+
+/* Border animation */
+
+@keyframes rotateBorder {
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Hover effect */
+
+section:hover {
+
+    transform: translateY(-10px) scale(1.02);
+
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
 }
 header{
-    background: linear-gradient(135deg, #0a1118, #065d85);
+    background: linear-gradient(135deg, #0a1118, #12a1e4);
     color: white;
     text-align: center;
     padding: 20px;
@@ -90,10 +172,6 @@ table a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-section:hover {
-    transform: translateY(-10px);
-    transition: 0.3s;
 }
 #contact{
     width:90%;
@@ -163,12 +241,15 @@ section:hover {
 }
 .dark {
     background-color: #0f172a;
-    color: #e2e8f0;
+    color: #2772d4;
 }
 /* Sections */
 .dark section {
     background-color: #1e293b;
     color: #e2e8f0;
+}
+.dark section::after {
+    background: #1e293b;
 }
 
 /* Navigation links */
