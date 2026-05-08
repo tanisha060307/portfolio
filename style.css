@@ -1,0 +1,99 @@
+ <style>
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial;
+    background-color: #f4f6f8;
+}
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1 1 40%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+header{
+    background-color: #0a66c2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+    background-color: #0a66c2;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+td {
+     padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+nav a {
+    color: #222;
+    padding: 10px;
+    text-align: center;
+}
+nav a:hover {
+    color: #0a66c2;
+}
+h1, h2 {
+    margin: 10px 0;
+    color: #0a66c2;
+}
+table a {
+    color: #0a66c2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+    color: #084a9e;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+#contact{
+    width:90%;
+}
+#contact a {
+    color: #0a66c2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+.dark {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    } 
+}
+</style>
