@@ -1,98 +1,207 @@
+<!DOCTYPE html>
 <html>
-    <head> 
-        <title>
-            TANISHA GHOSH PORTFOLIO
-        </title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-       <link rel="stylesheet" href="style.css">
-        </head>
-        <script>
-        function toggleMode() {
-        document.body.classList.toggle("dark");
-        let button = document.getElementById("theme");
-        if(document.body.classList.contains("dark")){
-            button.innerHTML= "☀️"
-        } else {
-            button.innerHTML="🌙"
-        }
-}
-</script>
-        <body>
-            <header>
-            <div class="profile-container">
-            <img src="tanisha.jpg" class="profile">
-            </div>
-            <h1>TANISHA GHOSH</h1>
-            <p><i> BCA Student & Aspiring Software Developer</i></p>
-            <button id="theme" onclick="toggleMode()">🌙</button>
-            </header>
-            <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#project">Projects</a>
-            <a href="#contact">Connect with me </a>
-            </nav>
-            <div class="container">
-            <section id="about">
-            <h2> 👩‍💻 ABOUT ME</h2>
+
+<head>
+    <title>TANISHA GHOSH PORTFOLIO</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="profile-container">
+            <img src="tanisha.jpg" class="profile" alt="Tanisha Ghosh">
+        </div>
+
+        <h1>TANISHA GHOSH</h1>
+
+        <p>
+            <i>BCA Student & Aspiring Software Developer</i>
+        </p>
+
+        <button id="theme" onclick="toggleMode()">🌙</button>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- ABOUT -->
+        <section id="about">
+
+            <h2>👩‍💻 ABOUT ME</h2>
+
             <p>
-             I'm a 2nd-year BCA student passionate about Java, Data Structures & Algorithms, Data Analytics, and Web Development. I enjoy building projects, solving problems, and continuously learning new technologies
+                I'm a 2nd-year BCA student passionate about Java,
+                Data Structures & Algorithms, Data Analytics, and Web Development.
+                I enjoy building projects, solving problems, and continuously
+                learning new technologies.
             </p>
-            </section>
-            <section id="education">
-                <h2> 🎓 EDUCATION</h2>
-                <ol>
-                <li> CLASS 10</li>
-                <li> CLASS 12</li>
-                <li> BCA PURSUING(1ST YEAR)</li>
-                </ol>
-            </section>
-            <section id="skills">
-                 <H2>🛠 SKILLS </H2>
-                <ul>
-                <li> C PROGRAMMING</li>
-                <li> R PROGRAMMING</li>
-                <li> EXCEL</li>
-                <li> POWER BI</li>
-                </ul>    
-            </section>
-            <section id="project">
-                <h2> 📂 MY PROJECTS: </h2>
-                 <table> 
+
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section id="education">
+
+            <h2>🎓 EDUCATION</h2>
+
+            <ol>
+                <li>CLASS 10</li>
+                <li>CLASS 12</li>
+                <li>BCA PURSUING (2ND YEAR)</li>
+            </ol>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section id="skills">
+
+            <h2>🛠 SKILLS</h2>
+
+            <ul>
+                <li>C Programming</li>
+                <li>R Programming</li>
+                <li>Excel</li>
+                <li>Power BI</li>
+            </ul>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="project">
+
+            <h2>📂 MY PROJECTS</h2>
+
+            <table>
+
                 <tr>
-                   <th>Project Name</th>
-                   <th>Description</th> 
+                    <th>Project Name</th>
+                    <th>Description</th>
                 </tr>
+
                 <tr>
-                 <td> <a href="https://tanisha060307.github.io/portfolio/" target="_blank">Portfolio Website</a></td>
-                <td>Created a basic personal portfolio using HTML</td>
-                 </tr>
-                 <tr>
-                <td><a href="#">Excel Data Analysis</a></td>
-                <td>Worked with sorting, pivot tables and dashboards</td>
+                    <td>
+                        <a href="https://tanisha060307.github.io/portfolio/" target="_blank">
+                            Portfolio Website
+                        </a>
+                    </td>
+
+                    <td>
+                        Personal portfolio website built using HTML and CSS.
+                    </td>
                 </tr>
+
+                <tr>
+                    <td>
+                        <a href="#">
+                            Excel Data Analysis
+                        </a>
+                    </td>
+
+                    <td>
+                        Worked with sorting, pivot tables and dashboards.
+                    </td>
+                </tr>
+
             </table>
-            </section>
-            <section id="contact"> 
-                 <H2> 📞 CONTACT ME </H2>
-                <p> <b>PHONE: </b>8240056652</p>
-                <p> <b>Email:</b> ghoshatanisha@gmail.com</p>
-                <p>
-                <b>LinkedIn:</b> 
-                 <a href="https://www.linkedin.com/in/tanisha-ghosh-874b0a3bb" target="_blank">
-                 Tanisha Ghosh
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact">
+
+            <h2>📞 CONTACT ME</h2>
+
+            <p>
+                <b>Phone:</b> 8240056652
+            </p>
+
+            <p>
+                <b>Email:</b>
+                <a href="mailto:ghoshatanisha@gmail.com">
+                    ghoshatanisha@gmail.com
                 </a>
-                </p>
-                <p>
-                <b>GitHub:</b> 
-                 <a href="https://github.com/tanisha060307" target="_blank">
-                 Tanisha Ghosh
+            </p>
+
+            <p>
+                <b>LinkedIn:</b>
+                <a href="https://www.linkedin.com/in/tanisha-ghosh-874b0a3bb"
+                    target="_blank">
+                    Tanisha Ghosh
                 </a>
-                </p>
-            </section>
-            </div>
-                <hr>
-                <p> © 2026 Tanisha Ghosh | All Rights Reserved</p>
-        </body>
+            </p>
+
+            <p>
+                <b>GitHub:</b>
+                <a href="https://github.com/tanisha060307"
+                    target="_blank">
+                    Tanisha Ghosh
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <hr>
+
+        <p>
+            © 2026 Tanisha Ghosh | All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function toggleMode() {
+
+            document.body.classList.toggle("dark");
+
+            let button = document.getElementById("theme");
+
+            if (document.body.classList.contains("dark")) {
+
+                button.innerHTML = "☀️";
+
+            } else {
+
+                button.innerHTML = "🌙";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
 </html>
