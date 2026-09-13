@@ -196,3 +196,64 @@ footer {
 .dark a {
     color: #38bdf8;
 }
+/* MOBILE MENU BUTTON */
+
+#menu-button {
+
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+}
+
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 600px) {
+
+    nav {
+
+        position: sticky;
+
+    }
+
+    #menu-button {
+
+        display: block;
+
+        margin: auto;
+
+    }
+
+    #nav-links {
+
+        display: none;
+
+        flex-direction: column;
+
+        margin-top: 10px;
+
+    }
+
+    #nav-links a {
+
+        display: block;
+
+        padding: 10px;
+
+    }
+
+    #nav-links.show {
+
+        display: flex;
+
+    }
+
+}
